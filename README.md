@@ -1,2 +1,5 @@
 # Papers
 This repo consist of all those papers I came across my course of research which I found very interesting and mind boggling.
+
+<h2>Neural Module Networks</h2>
+The paper adresses the problem statement of Visual Question and Answering using a new set of proposed networks called Neural Module Networks. The idea presented throught this paper is to use sematic parsing to get a representations of a questions posed and using some given module a layout to the network is decided using the available modules. The modules work on images particularly. There are 4 modules decribed in the paper namely find, transform, describe and. While parsing "Where is the cat" becomes where(cat) which is then replaced by find(cat). This find module then produces an attention on the cat in the image and the output is predicted as couch. An LSTM encoder is also used to preserve the informations which the module cannot keep like "is" or "are". The model is finally trained end to end on input images and questions with labels.
